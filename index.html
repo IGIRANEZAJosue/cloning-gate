@@ -6,14 +6,14 @@
    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
    <link rel="stylesheet" href="/src/output.css">
 
-   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
    <title>Tailwind Clone</title>
 </head>
 <body>
    
    <!-- Top black banner -->
-   <div class="flex items-center justify-between w-full text-white bg-[#333333] px-28">
+   <div class="hidden lg:flex items-center justify-between w-full text-white bg-[#333333] px-4 lg:px-28">
       <div class="flex items-center gap-8 text-xs font-semibold p-3">
          <span class="flex items-center gap-3">
             About the University
@@ -44,12 +44,15 @@
    <div class="w-full font-Lato">
 
       <!-- Navbar ================================================================== -->
-      <nav class="sticky top-0 z-20 flex items-center justify-between bg-[#D5D5D5] py-4 px-28">
-         <div class="logo">
-            <img class="w-[286px]" src="/images/logo.svg" alt="">
+      <nav class="sticky top-0 z-20 flex items-center justify-between bg-[#D5D5D5] py-4 px-4 lg:px-28">
+         <div class="logo flex items-center gap-5">
+            <span class="flex lg:hidden">
+               <i class="fa-solid fa-bars text-2xl"></i>
+            </span>
+            <img class="w-[240px] lg:w-[286px]" src="/images/logo.svg" alt="">
          </div>
          <div class="flex items-center gap-8">
-            <ul class="flex items-center gap-6 font-bold text-lg tex-[#212529]">
+            <ul class="hidden lg;flex items-center gap-6 font-bold text-lg tex-[#212529]">
                <li>STUDY</li>
                <li>RESEARCH</li>
                <li>INNOVATE</li>
@@ -57,7 +60,11 @@
                <li>EXPLORE</li>
             </ul>
 
-            <button class="flex items-center gap-10  border-b-[1px] border-black">
+            <span class="block lg:hidden">
+               <i class="fa-regular fa-bars-staggered"></i>
+            </span>
+
+            <button class="hidden lg:flex items-center gap-10  border-b-[1px] border-black">
                <p class="text-sm">Search</p>
                <i class="fa-regular fa-magnifying-glass"></i>
             </button>
@@ -65,7 +72,7 @@
       </nav>
 
       <!-- Hero section ============================================================= -->
-      <section class=" relative w-full h-[90vh] bg-[url('https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg')] bg-center bg-no-repeat px-28">
+      <section class=" relative w-full h-[90vh] bg-[url('https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg')] bg-center bg-no-repeat px-4 lg:px-28">
          <div class=" absolute bottom-24 flex flex-col gap-6 p-5 w-1/3 bg-[#333333]/90 text-[#d5d5d5] ">
             <h3 class="font-bold text-2xl">IJUP 2024: New talents in science reveal themselves at U.Porto</h3>
             <p>More than 1,000 students are taking part in the 17th U.Porto Youth Research Meeting from 8 to 10 May.</p>
@@ -76,7 +83,7 @@
       </section>
 
       <!-- Study section ============================================================= -->
-      <section class="px-28 my-24">
+      <section class= px-4"lg:px-28 my-24">
          <h1 class="text-6xl text-[#a18a4d] font-light">Study</h1>
          <div class="flex items-start justify-between mt-4">
             <h1 class=" text-3xl font-semibold">Your future is here!</h1>
@@ -85,7 +92,7 @@
       </section>
 
       <!-- course section -->
-      <section class="px-28 my-12">
+      <section class= px-4"lg:px-28 my-12">
          <h1 class="text-3xl text-[#333333] font-bold">Which course are you looking for?</h1>
          <div class="flex flex-col lg:flex-row gap-6 mt-6">
             <div class="w-full lg:w-[65%] space-y-4">
@@ -108,7 +115,7 @@
       </section>
 
       <!-- News section -->
-      <section class="bg-[#f2f2f2] px-28 py-20 space-y-6 lg:space-y-12">
+      <section class="bg-[#f2f2f2] px-4 lg:px-28 py-20 space-y-6 lg:space-y-12">
          <div class="flex items-center justify-between">
             <h1 class="text-5xl text-[#a18a4d] font-light">News</h1>
             <span class="flex items-center gap-3 text-gold">
@@ -165,7 +172,7 @@
       </section>
 
       <!-- We are a University of Excellence! =============================================== -->
-      <section class="flex flex-row gap-8 py-20 px-28">
+      <section class="flex flex-row gap-8 py-20 px-4 lg:px-28">
          <div class="relative w-[40%]">
             <h1 class="text-gold text-5xl font-light">We are a University of Excellence!</h1>
             <img class="absolute h-[300px] top-0 right-0" src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
@@ -197,7 +204,7 @@
       </section>  
 
       <!-- Figures section ============================================================== -->
-      <section class="bg-gold px-28 py-24 text-white">
+      <section class="bg-gold px-4 lg:px-28 py-24 text-white">
          <div class="relative flex flex-col gap-12 items-center text-center w-full">
             <span class="absolute right-0 flex items-center gap-3 font-bold text-white">
                <p>Learn More</p>
@@ -227,7 +234,7 @@
       </section>
 
       <!-- FAQs section ==================================================================== -->
-      <section class="px-28 py-24 space-y-6 bg-[#f2f2f2]">
+      <section class= px-4"lg:px-28 py-24 space-y-6 bg-[#f2f2f2]">
          <h1 class="text-6xl text-[#a18a4d] font-light">Frequently asked questions</h1>
          <ul class="flex items-center gap-6 border-b-2 border-gray-300 text-grey">
             <li class=" font-medium border-b-2 border-b-black text-lg py-4">International Students</li>
@@ -264,7 +271,7 @@
       </section>
 
       <!-- Footer ================================================================================= -->
-      <footer class=" relative bg-grey px-28 py-24 text-white">
+      <footer class=" relative bg-grey px-4 lg:px-28 py-24 text-white">
          <img class="absolute w-[50vw] -left-[25vw] -top-24" src="https://www.up.pt/portal/static/images/img_minerva_footer.png" alt="">
 
          <div class="grid gap-3 lg:gap-0 grid-cols-1 lg:grid-cols-5 grid-rows-6 lg:grid-rows-2 font-light">
@@ -295,7 +302,7 @@
          <hr class="h-[2px] my-8 bg-[#5C5C5C] border-0">
         
          <div class="flex items-start gap-6">
-            <span class="flex gap-8 cursor-pointer text-xl w-[65%]">
+            <span class="flex gap-8 cursor-pointer text-xl w-full lg:w-[65%]">
                <i class="fa-regular fa-newspaper"></i>
                <i class="fa-brands fa-instagram"></i>
                <i class="fa-brands fa-youtube"></i>
