@@ -13,20 +13,20 @@
 <body>
    
    <!-- Top black banner -->
-   <div class="hidden lg:flex items-center justify-between w-full text-white bg-[#333333] px-4 lg:px-28">
-      <div class="flex items-center gap-8 text-xs font-semibold p-3">
+   <div class="lg:flex justify-between items-center hidden bg-[#333333] px-4 lg:px-28 w-full text-white">
+      <div class="flex items-center gap-8 p-3 font-semibold text-xs">
          <span class="flex items-center gap-3">
             About the University
-            <i class="fa-solid fa-caret-down text-[12px] text-gray-400"></i>
+            <i class="text-[12px] text-gray-400 fa-caret-down fa-solid"></i>
          </span>
          <span class="flex items-center gap-3">
             Faculties
-            <i class="fa-solid fa-caret-down text-[12px] text-gray-400"></i>
+            <i class="text-[12px] text-gray-400 fa-caret-down fa-solid"></i>
          </span>
       </div>
       <div class="flex items-center gap-8 p-">
          <span class="flex gap-4 cursor-pointer">
-            <i class="fa-regular fa-newspaper"></i>
+            <i class="fa-newspaper fa-regular"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-linkedin"></i>
@@ -44,15 +44,15 @@
    <div class="w-full font-Lato">
 
       <!-- Navbar ================================================================== -->
-      <nav class="sticky top-0 z-20 flex items-center justify-between bg-[#D5D5D5] py-4 px-4 lg:px-28">
-         <div class="logo flex items-center gap-5">
+      <nav class="top-0 z-20 sticky flex justify-between items-center bg-[#D5D5D5] px-4 lg:px-28 py-4">
+         <div class="flex items-center gap-5 logo">
             <span class="flex lg:hidden">
-               <i class="fa-solid fa-bars text-2xl"></i>
+               <i class="text-2xl fa-bars fa-solid"></i>
             </span>
             <img class="w-[240px] lg:w-[286px]" src="/images/logo.svg" alt="">
          </div>
          <div class="flex items-center gap-8">
-            <ul class="hidden lg;flex items-center gap-6 font-bold text-lg tex-[#212529]">
+            <ul class="lg:flex items-center gap-6 hidden font-bold text-lg tex-[#212529]">
                <li>STUDY</li>
                <li>RESEARCH</li>
                <li>INNOVATE</li>
@@ -61,74 +61,74 @@
             </ul>
 
             <span class="block lg:hidden">
-               <i class="fa-regular fa-bars-staggered"></i>
+               <i class="fa-bars-staggered fa-regular"></i>
             </span>
 
-            <button class="hidden lg:flex items-center gap-10  border-b-[1px] border-black">
+            <button class="lg:flex items-center gap-10 hidden border-b-[1px] border-black">
                <p class="text-sm">Search</p>
-               <i class="fa-regular fa-magnifying-glass"></i>
+               <i class="fa-magnifying-glass fa-regular"></i>
             </button>
          </div>
       </nav>
 
       <!-- Hero section ============================================================= -->
-      <section class=" relative w-full h-[90vh] bg-[url('https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg')] bg-center bg-no-repeat px-4 lg:px-28">
-         <div class=" absolute bottom-0 left-0 lg:left-28 lg:bottom-24 flex flex-col gap-6 p-5 w-full lg:w-1/3 bg-[#333333]/90 text-[#d5d5d5] ">
+      <section class="relative bg-[url('https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg')] bg-no-repeat bg-center px-4 lg:px-28 w-full h-[90vh]">
+         <div class="bottom-0 lg:bottom-24 left-0 lg:left-28 absolute flex flex-col gap-6 bg-[#333333]/90 p-5 w-full lg:w-1/3 text-[#d5d5d5]">
             <h3 class="font-bold lg:text-2xl">IJUP 2024: New talents in science reveal themselves at U.Porto</h3>
             <p class="text-sm lg:text-base">More than 1,000 students are taking part in the 17th U.Porto Youth Research Meeting from 8 to 10 May.</p>
-            <button class="text-[#333] text-sm font-semibold w-[80px] bg-[#a18a4d]">
+            <button class="bg-[#a18a4d] w-[80px] font-semibold text-[#333] text-sm">
                See More
             </button>
          </div>
       </section>
 
       <!-- Study section ============================================================= -->
-      <section class="px-4 lg:px-28 my-24">
-         <h1 class="text-6xl text-[#a18a4d] font-light">Study</h1>
-         <div class="flex flex-col lg:flex-row items-start justify-between mt-4">
-            <h1 class=" text-3xl font-semibold mb-4">Your future is here!</h1>
-            <p class="w-full lg:w-[65%] text-lg text-[#212529]">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market</p>
+      <section class="my-24 px-4 lg:px-28">
+         <h1 class="font-light text-[#a18a4d] text-6xl">Study</h1>
+         <div class="flex lg:flex-row flex-col justify-between items-start mt-4">
+            <h1 class="mb-4 font-semibold text-3xl">Your future is here!</h1>
+            <p class="w-full lg:w-[65%] text-[#212529] text-lg">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market</p>
          </div>
       </section>
 
       <!-- course section -->
-      <section class="px-4 lg:px-28 my-12">
-         <h1 class="text-3xl text-[#333333] font-bold">Which course are you looking for?</h1>
-         <div class="flex flex-col lg:flex-row gap-6 mt-6">
-            <div class="w-full lg:w-[65%] space-y-4">
-               <select class="w-full p-3 border border-[#a18a4d] outline-none">
+      <section class="my-12 px-4 lg:px-28">
+         <h1 class="font-bold text-[#333333] text-3xl">Which course are you looking for?</h1>
+         <div class="flex lg:flex-row flex-col gap-6 mt-6">
+            <div class="space-y-4 w-full lg:w-[65%]">
+               <select class="border-[#a18a4d] p-3 border w-full outline-none">
                   <option selected>All</option>
                   <option value="bachelors">Bachelor's and Integrated Master’s Degrees</option>
                   <option value="masters">Master’s Degrees</option>
                   <option value="doctorates">Doctorates</option>
                 </select>
-               <input class="w-full p-3 border border-[#a18a4d] outline-none" type="text" placeholder="Please enter course keywords...">
-               <button class="bg-gold w-full text-white font-bold p-3 border border-gold hover:bg-transparent hover:text-gold duration-200">Search</button>
+               <input class="border-[#a18a4d] p-3 border w-full outline-none" type="text" placeholder="Please enter course keywords...">
+               <button class="border-gold bg-gold hover:bg-transparent p-3 border w-full font-bold text-white hover:text-gold duration-200">Search</button>
             </div>
-            <div class="flex w-full lg:w-[35%] flex-col gap-4">
-               <h3 class="text-xl font-semibold">Courses from A to Z:</h3>
-               <a class="text-gold underline text-xl" href="">Bachelor's and Integrated Master’s Degrees</a>
-               <a class="text-gold underline text-xl" href="#">Master’s Degrees</a>
-               <a class="text-gold underline text-xl" href="#">Doctorates</a>
+            <div class="flex flex-col gap-4 w-full lg:w-[35%]">
+               <h3 class="font-semibold text-xl">Courses from A to Z:</h3>
+               <a class="text-gold text-xl underline" href="">Bachelor's and Integrated Master’s Degrees</a>
+               <a class="text-gold text-xl underline" href="#">Master’s Degrees</a>
+               <a class="text-gold text-xl underline" href="#">Doctorates</a>
             </div>
          </div>
       </section>
 
       <!-- News section -->
-      <section class="bg-[#f2f2f2] px-4 lg:px-28 py-20 space-y-6 lg:space-y-12">
-         <div class="flex items-center justify-between">
-            <h1 class="text-5xl text-[#a18a4d] font-light">News</h1>
+      <section class="space-y-6 lg:space-y-12 bg-[#f2f2f2] px-4 lg:px-28 py-20">
+         <div class="flex justify-between items-center">
+            <h1 class="font-light text-[#a18a4d] text-5xl">News</h1>
             <span class="flex items-center gap-3 text-gold">
                <p class="font-bold text-md">All news</p>
-               <i class="fa-solid fa-circle-chevron-right"></i>
+               <i class="fa-circle-chevron-right fa-solid"></i>
             </span>
          </div>
-         <div class="flex flex-col lg:flex-row gap-6 lg:gap-12 ">
-            <div class="flex-1 flex flex-col">
-               <div class="h-[280px] p-5 flex flex-col items-start justify-between bg-white">
+         <div class="flex lg:flex-row flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col flex-1">
+               <div class="flex flex-col justify-between items-start bg-white p-5 h-[280px]">
                   <div>
                      <p>Desporto</p>
-                     <h4 class="text-xl font-bold">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
+                     <h4 class="font-bold text-xl">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
                   </div>
                   <p>14 May 2024</p>
                </div>
@@ -136,11 +136,11 @@
                   <img src="https://noticias.up.pt/wp-content/uploads/2024/05/aerea-frente-edificios.jpg" alt="">
                </div>
             </div>
-            <div class="hidden flex-1 lg:flex flex-col">
-               <div class="h-[280px] p-5 flex flex-col items-start justify-between bg-white">
+            <div class="lg:flex flex-col flex-1 hidden">
+               <div class="flex flex-col justify-between items-start bg-white p-5 h-[280px]">
                   <div>
                      <p>Desporto</p>
-                     <h4 class="text-xl font-bold">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
+                     <h4 class="font-bold text-xl">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
                   </div>
                   <p>14 May 2024</p>
                </div>
@@ -148,11 +148,11 @@
                   <img src="https://noticias.up.pt/wp-content/uploads/2024/05/aerea-frente-edificios.jpg" alt="">
                </div>
             </div>
-            <div class="hidden flex-1 lg:flex flex-col">
-               <div class="h-[280px] p-5 flex flex-col items-start justify-between bg-white">
+            <div class="lg:flex flex-col flex-1 hidden">
+               <div class="flex flex-col justify-between items-start bg-white p-5 h-[280px]">
                   <div>
                      <p>Desporto</p>
-                     <h4 class="text-xl font-bold">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
+                     <h4 class="font-bold text-xl">U.Porto vai organizar Europeu Universitário de Futebol em 2027</h4>
                   </div>
                   <p>14 May 2024</p>
                </div>
@@ -162,40 +162,40 @@
             </div>
          </div>
          <div class="flex gap-4 text-white">
-            <span class="bg-[#999] size-12 flex items-center justify-center">
-               <i class="fa-solid fa-chevron-left"></i>
+            <span class="flex justify-center items-center bg-[#999] size-12">
+               <i class="fa-chevron-left fa-solid"></i>
             </span>
-            <span class="bg-gold size-12 flex items-center justify-center">
-               <i class="fa-solid fa-chevron-right"></i>
+            <span class="flex justify-center items-center bg-gold size-12">
+               <i class="fa-chevron-right fa-solid"></i>
             </span>
          </div>
       </section>
 
       <!-- We are a University of Excellence! =============================================== -->
-      <section class="flex flex-col lg:flex-row gap-8 py-20 px-4 lg:px-28">
+      <section class="flex lg:flex-row flex-col gap-8 px-4 lg:px-28 py-20">
          <div class="relative w-full lg:w-[40%]">
-            <h1 class="text-gold text-4xl font-light">We are a University of Excellence!</h1>
-            <img class="hidden lg:flex absolute h-[300px] top-0 right-0" src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
+            <h1 class="font-light text-4xl text-gold">We are a University of Excellence!</h1>
+            <img class="top-0 right-0 absolute lg:flex hidden h-[300px]" src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
          </div>
-         <div class="w-full lg:w-[60%] space-y-8">
-            <p class="text-lg font-light">With over 100 years of history, the University of Porto is a <b>leading teaching and scientific research institution in Portugal and worldwide</b></p>
-            <p class="text-lg font-light">Considered <b>the best Portuguese University and one of the best 100 European institutions</b>  according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</p>
+         <div class="space-y-8 w-full lg:w-[60%]">
+            <p class="font-light text-lg">With over 100 years of history, the University of Porto is a <b>leading teaching and scientific research institution in Portugal and worldwide</b></p>
+            <p class="font-light text-lg">Considered <b>the best Portuguese University and one of the best 100 European institutions</b>  according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</p>
             <p class="text-lg"><b>We are waiting for you!</b></p>
-            <span class="flex items-center gap-3 font-bold text-gold ">
+            <span class="flex items-center gap-3 font-bold text-gold">
                <p>See More</p>
-               <i class="fa-solid fa-circle-chevron-right"></i>
+               <i class="fa-circle-chevron-right fa-solid"></i>
             </span>
          </div>
       </section>
 
       <!-- Research section ================================================================ -->
-      <section class=" px-4 lg:px-28 py-20">
-         <h1 class="text-gold text-5xl font-light my-3 lg:my-6 p-4">Research</h1>
-         <div class="flex flex-col lg:flex-row  gap-4 p-4">
-            <div class="w-full lg:w-1/2 space-y-5">
-               <h2 class="text-2xl font-bold">Research University</h2>
-               <p class="text-2xl text-blacktext font-light ">With <a class="text-gold" href="#">48 research units</a>  and a highly qualified scientific community, the University of Porto is <b>one of the largest producers of science in Portugal</b>, contributing to almost </p>
-               <p class="text-2xl text-blacktext font-light ">The excellence of our scientific ecosystem is particularly evident in the </p>
+      <section class="px-4 lg:px-28 py-20">
+         <h1 class="my-3 lg:my-6 p-4 font-light text-5xl text-gold">Research</h1>
+         <div class="flex lg:flex-row flex-col gap-6 p-4">
+            <div class="space-y-5 w-full lg:w-1/2">
+               <h2 class="font-bold text-2xl">Research University</h2>
+               <p class="font-light text-blacktext text-xl">With <a class="text-gold" href="#">48 research units</a>  and a highly qualified scientific community, the University of Porto is <b>one of the largest producers of science in Portugal</b>, contributing to almost </p>
+               <p class="font-light text-blacktext text-xl">The excellence of our scientific ecosystem is particularly evident in the leading position the University occupies in the main international rankings of Higher Education </p>
             </div>
             <div class="w-full lg:w-1/2">
                <img src="https://www.up.pt/portal/media/images/investigar-home_destaque.format-jpeg.jpg" alt="">
@@ -205,29 +205,29 @@
 
       <!-- Figures section ============================================================== -->
       <section class="bg-gold px-4 lg:px-28 py-24 text-white">
-         <div class="relative flex flex-col gap-8 items-center text-center w-full">
-            <span class="absolute right-0 flex items-center gap-3 font-bold text-white">
+         <div class="relative flex flex-col items-center gap-8 w-full text-center">
+            <span class="right-0 absolute flex items-center gap-3 font-bold text-white">
                <p>Learn More</p>
-               <i class="fa-solid fa-circle-chevron-right"></i>
+               <i class="fa-circle-chevron-right fa-solid"></i>
             </span>
             <img class="size-28" src="/images/mic.svg" alt="">
             <span class="space-y-2">
-               <h1 class="text-[40px] font-bold">U.PROTO IN FIGURES</h1>
+               <h1 class="font-bold text-[40px]">U.PROTO IN FIGURES</h1>
                <p class="font-light text-[32px]">2022/2023</p>
             </span>
-            <span class="w-full h-[1px] bg-white"></span>
-            <div class="flex flex-col lg:flex-row gap-8 w-full">
-               <span class="flex-1 flex flex-col items-center">
-                  <h1 class="text-4xl font-bold">+300</h1>
-                  <p class=" text-4xl font-light">Courses</p>
+            <span class="bg-white w-full h-[1px]"></span>
+            <div class="flex lg:flex-row flex-col gap-8 w-full">
+               <span class="flex flex-col flex-1 items-center">
+                  <h1 class="font-bold text-4xl">+300</h1>
+                  <p class="font-light text-4xl">Courses</p>
                </span>
-               <span class="flex-1 flex flex-col items-center">
-                  <h1 class="text-4xl font-bold">+350.000</h1>
-                  <p class=" text-4xl font-light">Students enrolled</p>
+               <span class="flex flex-col flex-1 items-center">
+                  <h1 class="font-bold text-4xl">+350.000</h1>
+                  <p class="font-light text-4xl">Students enrolled</p>
                </span>
-               <span class="flex-1 flex flex-col items-center">
-                  <h1 class="text-4xl font-bold">+48</h1>
-                  <p class=" text-4xl font-light">Research units</p>
+               <span class="flex flex-col flex-1 items-center">
+                  <h1 class="font-bold text-4xl">+48</h1>
+                  <p class="font-light text-4xl">Research units</p>
                </span>
             </div>
          </div>
@@ -235,9 +235,9 @@
 
       <!-- FAQs section ==================================================================== -->
       <section class= "px-4 lg:px-28 py-24 space-y-6 bg-[#f2f2f2]">
-         <h1 class=" text-4xl lg:text-5xl text-[#a18a4d] font-light">Frequently asked questions</h1>
+         <h1 class="font-light text-[#a18a4d] text-4xl lg:text-5xl">Frequently asked questions</h1>
          
-         <select class="lg:hidden block w-full p-3 border-2 border-[#a18a4d] outline-none">
+         <select class="block border-[#a18a4d] border-2 lg:hidden p-3 w-full outline-none">
             <option selected>International Students</option>
             <option value="bachelors">Prospecive Students</option>
             <option value="masters">Prfessionals</option>
@@ -245,28 +245,28 @@
             <option value="doctorates">U.Porto Students</option>
           </select>
          
-         <ul class="hidden lg:flex items-center gap-6 border-b-2 border-gray-300 text-grey">
-            <li class=" font-medium border-b-2 border-b-black text-lg py-4">International Students</li>
-            <li class=" font-medium hover:border-b-2 hover:border-b-black text-lg py-4 text-[#999] duration-200">Prospecive Students</li>
-            <li class=" font-medium hover:border-b-2 hover:border-b-black text-lg py-4 text-[#999] duration-200">Prfessionals</li>
-            <li class=" font-medium hover:border-b-2 hover:border-b-black text-lg py-4 text-[#999] duration-200">Alumni</li>
-            <li class=" font-medium hover:border-b-2 hover:border-b-black text-lg py-4 text-[#999] duration-200">U.Porto Students</li>
+         <ul class="lg:flex items-center gap-6 border-gray-300 hidden border-b-2 text-grey">
+            <li class="py-4 border-b-2 border-b-black font-medium text-lg">International Students</li>
+            <li class="py-4 hover:border-b-2 hover:border-b-black font-medium text-[#999] text-lg duration-200">Prospecive Students</li>
+            <li class="py-4 hover:border-b-2 hover:border-b-black font-medium text-[#999] text-lg duration-200">Prfessionals</li>
+            <li class="py-4 hover:border-b-2 hover:border-b-black font-medium text-[#999] text-lg duration-200">Alumni</li>
+            <li class="py-4 hover:border-b-2 hover:border-b-black font-medium text-[#999] text-lg duration-200">U.Porto Students</li>
          </ul>
-         <div class="flex flex-col gap-6 lg:gap-0 lg:flex-row">
-            <div class="w-full lg:w-1/2 relative space-y-5">
+         <div class="flex lg:flex-row flex-col gap-6 lg:gap-0">
+            <div class="relative space-y-5 w-full lg:w-1/2">
                <h1 class="font-bold text-3xl">International Students</h1>
-               <p class="font-light text-lg text-blacktext w-4/5">Welcome! In this area you will find the answers you need to start and make the most of your experience at the University. We hope to help you... and welcome you soon!</p>
-               <span class="flex items-center gap-3 font-bold text-gold ">
+               <p class="w-4/5 font-light text-blacktext text-lg">Welcome! In this area you will find the answers you need to start and make the most of your experience at the University. We hope to help you... and welcome you soon!</p>
+               <span class="flex items-center gap-3 font-bold text-gold">
                   <p>See More</p>
-                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <i class="fa-circle-chevron-right fa-solid"></i>
                </span>
 
-               <div class="hidden  absolute bottom-0 left-0 lg:flex gap-1 text-white">
-                  <span class="bg-[#999] size-12 flex items-center justify-center">
-                     <i class="fa-solid fa-chevron-left"></i>
+               <div class="bottom-0 left-0 absolute lg:flex gap-1 hidden text-white">
+                  <span class="flex justify-center items-center bg-[#999] size-12">
+                     <i class="fa-chevron-left fa-solid"></i>
                   </span>
-                  <span class="bg-gold size-12 flex items-center justify-center">
-                     <i class="fa-solid fa-chevron-right"></i>
+                  <span class="flex justify-center items-center bg-gold size-12">
+                     <i class="fa-chevron-right fa-solid"></i>
                   </span>
                </div>
 
@@ -280,54 +280,54 @@
       </section>
 
       <!-- Footer ================================================================================= -->
-      <footer class=" relative bg-grey px-4 lg:px-28 py-24 text-white">
-         <img class="hidden lg:flex absolute w-[50vw] -left-[25vw] -top-24" src="https://www.up.pt/portal/static/images/img_minerva_footer.png" alt="">
+      <footer class="relative bg-grey px-4 lg:px-28 py-24 text-white">
+         <img class="-top-24 -left-[25vw] absolute lg:flex hidden w-[50vw]" src="https://www.up.pt/portal/static/images/img_minerva_footer.png" alt="">
 
-         <div class="grid gap-3 lg:gap-0 grid-cols-1 lg:grid-cols-5 grid-rows-6 lg:grid-rows-2 font-light">
-            <div class="row-span-1 lg:row-span-2 text-gold font-semibold ">Media</div>
+         <div class="gap-3 lg:gap-0 grid grid-cols-1 lg:grid-cols-5 grid-rows-6 lg:grid-rows-2 font-light">
+            <div class="row-span-1 lg:row-span-2 font-semibold text-gold">Media</div>
             <div class="row-span-1 text-sm">U.Porto News</div>
             <div class="row-span-1 text-sm">U.Porto Agenda</div>
             <div class="row-span-1 text-sm">Media Contacts</div>
             <div class="row-span-1 text-sm">Image Manual</div>
-            <div class="row-span-1 text-sm col-start-1 lg:col-start-2">Brochures and Presentations</div>
+            <div class="col-start-1 lg:col-start-2 row-span-1 text-sm">Brochures and Presentations</div>
         </div>
 
-         <div class="grid gap-3 lg:gap-0 grid-cols-1 lg:grid-cols-5 lg:grid-rows-3 my-20 font-light">
-            <div class="row-span-1 lg:row-span-3 text-gold font-semibold">U.Porto Portals</div>
-            <div class=" text-sm row-span-1">CDUP - U.Porto Sports Centre</div>
-            <div class=" text-sm row-span-1">Social Support Services of the University of Porto (SASUP)</div>
-            <div class=" text-sm row-span-1">Former Students Portal</div>
-            <div class=" text-sm row-span-1">UPdigital Portal</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-2">Educational Innovation</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-3">U.Porto PRESS</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-4">U.Porto Innovation</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-5">Documentation and Information Services and Resources (SRDI)</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-2 lg:row-start-3">Peer Mentoring</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-3 lg:row-start-3">AcademiaUP</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-4 lg:row-start-3">Complaints Portal</div>
-            <div class=" text-sm row-span-1 col-start-1 lg:col-start-5 lg:row-start-3">SIGARRA U.Porto</div>
+         <div class="gap-3 lg:gap-0 grid grid-cols-1 lg:grid-cols-5 lg:grid-rows-3 my-20 font-light">
+            <div class="row-span-1 lg:row-span-3 font-semibold text-gold">U.Porto Portals</div>
+            <div class="row-span-1 text-sm">CDUP - U.Porto Sports Centre</div>
+            <div class="row-span-1 text-sm">Social Support Services of the University of Porto (SASUP)</div>
+            <div class="row-span-1 text-sm">Former Students Portal</div>
+            <div class="row-span-1 text-sm">UPdigital Portal</div>
+            <div class="col-start-1 lg:col-start-2 row-span-1 text-sm">Educational Innovation</div>
+            <div class="col-start-1 lg:col-start-3 row-span-1 text-sm">U.Porto PRESS</div>
+            <div class="col-start-1 lg:col-start-4 row-span-1 text-sm">U.Porto Innovation</div>
+            <div class="col-start-1 lg:col-start-5 row-span-1 text-sm">Documentation and Information Services and Resources (SRDI)</div>
+            <div class="col-start-1 lg:col-start-2 row-span-1 lg:row-start-3 text-sm">Peer Mentoring</div>
+            <div class="col-start-1 lg:col-start-3 row-span-1 lg:row-start-3 text-sm">AcademiaUP</div>
+            <div class="col-start-1 lg:col-start-4 row-span-1 lg:row-start-3 text-sm">Complaints Portal</div>
+            <div class="col-start-1 lg:col-start-5 row-span-1 lg:row-start-3 text-sm">SIGARRA U.Porto</div>
          </div>
      
-         <hr class="h-[2px] my-8 bg-[#5C5C5C] border-0">
+         <hr class="border-0 bg-[#5C5C5C] my-8 h-[2px]">
         
-         <div class="flex flex-col lg:flex-row items-start gap-6">
-            <span class="flex gap-8 cursor-pointer text-xl w-full lg:w-[65%]">
-               <i class="fa-regular fa-newspaper"></i>
+         <div class="flex lg:flex-row flex-col items-start gap-6">
+            <span class="flex gap-8 w-full lg:w-[65%] text-xl cursor-pointer">
+               <i class="fa-newspaper fa-regular"></i>
                <i class="fa-brands fa-instagram"></i>
                <i class="fa-brands fa-youtube"></i>
                <i class="fa-brands fa-linkedin"></i>
                <i class="fa-brands fa-twitter"></i>
                <i class="fa-brands fa-square-facebook"></i>
             </span>
-            <div class="flex flex-col gap-2 font-light w-full lg:w-[35%] space-y-3 ">
-               <h class="text-sm font-bold">Contacts</h>
+            <div class="flex flex-col gap-2 space-y-3 w-full lg:w-[35%] font-light">
+               <h class="font-bold text-sm">Contacts</h>
                <p>Reitoria da Universidade do Porto</p>
                <p>Praça Gomes Teixeira <br>4099-002 Porto, Portugal</p>
                <p>Tel.: (+351) 220 408 000 <br><b>E-mail:</b> up@up.pt</p>
             </div>
          </div>
 
-         <div class="flex flex-col gap-3 lg:gap-8 lg:flex-row my-6 font-light">
+         <div class="flex lg:flex-row flex-col gap-3 lg:gap-8 my-6 font-light">
             <p>&copy University of Porto 2024</p>
             <p>Personal Data Protection</p>
             <p>Privacy Policy</p>
