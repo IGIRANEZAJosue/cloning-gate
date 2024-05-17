@@ -584,6 +584,10 @@ video {
   left: 0px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .z-20{
   z-index: 20;
 }
@@ -802,6 +806,10 @@ video {
   gap: 3rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -846,6 +854,14 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
 .border-\[\#a18a4d\]{
   --tw-border-opacity: 1;
   border-color: rgb(161 138 77 / var(--tw-border-opacity));
@@ -859,6 +875,36 @@ video {
 .border-gold{
   --tw-border-opacity: 1;
   border-color: rgb(161 138 77 / var(--tw-border-opacity));
+}
+
+.border-grey{
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+}
+
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-b-blacktext{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(33 37 41 / var(--tw-border-opacity));
+}
+
+.border-b-black{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#333333\]{
@@ -1059,6 +1105,10 @@ video {
   font-weight: 800;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .text-\[\#212529\]{
   --tw-text-opacity: 1;
   color: rgb(33 37 41 / var(--tw-text-opacity));
@@ -1117,6 +1167,16 @@ video {
   color: ;
 }
 
+.text-grey{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.text-\[\#999\]{
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1136,6 +1196,15 @@ video {
 
 .hover\:gap-4:hover{
   gap: 1rem;
+}
+
+.hover\:border-b-2:hover{
+  border-bottom-width: 2px;
+}
+
+.hover\:border-b-black:hover{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .hover\:bg-transparent:hover{
